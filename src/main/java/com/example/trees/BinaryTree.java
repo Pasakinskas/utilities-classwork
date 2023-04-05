@@ -46,4 +46,12 @@ public abstract class BinaryTree<T> {
 
     return current;
   }
+
+  public void printTreeValues(Node<T> current) {
+    if (current != null) {
+      System.out.println(current.data);
+      printTreeValues(current.left);
+      printTreeValues(current.right);
+    }
+  }
 }

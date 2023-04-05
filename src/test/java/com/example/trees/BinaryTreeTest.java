@@ -19,6 +19,7 @@ public class BinaryTreeTest {
     };
 
     mytree.insertArray(myArr);
-    System.out.println();
+
+    mytree.printTreeValues(mytree.root);
   }
 }
